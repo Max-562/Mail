@@ -15,10 +15,49 @@
       });
    })();
 </script>
-</head>
-<body>
-</head>
+<style>
+            body {
+            background-color: black; 
+            color: white;  
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+        }
+    #grad { 
+        background-image: linear-gradient(to bottom right, red, yellow);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .div {
+        background-color: rgb(32, 59, 67);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 200px;
+        border-radius: 4px;
+        border: 1px solid #c612eeb2;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(28, 54, 219);
+    }
+</style>
+
+</head>
 <body>
     <div class="div">
         <h2>Email</h2>
@@ -37,10 +76,10 @@
      </label>
      <br>
     <br>
-     <button onclick="Submit()">Click</button>
+     <button onclick="submit()">Click</button>
     </div>
     <script>
-        function Submit(){
+        function submit(){
          let username = document.getElementById("username").value;
          let useremail = document.getElementById("useremail").value;
          let usermessage = document.getElementById("usermessage").value;
